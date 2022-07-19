@@ -161,4 +161,6 @@ func batteryLife(batteryCharge: Int) {
     }
 }
 
+//print("new one")
+
 //batteryLife(batteryCharge: 43) //----Uncommit

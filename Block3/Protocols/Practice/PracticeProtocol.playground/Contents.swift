@@ -14,13 +14,13 @@ protocol Hero: Movable, Figtable {
     var name: String {get set}
 }
 
+//----------------Create struct---------------
+
 struct Farmer: Movable {
     func run() {
         print("Farmer Run")
     }
 }
-
-//----------------Create struct---------------
 
 struct Clerk: Movable {
     func run() {
@@ -86,4 +86,3 @@ taverna.figters = [butcher, soldier]
 taverna.enterTavern(hero: myHero1)
 taverna.enterTavern(hero: myHero2)
 
-//----------My game------------

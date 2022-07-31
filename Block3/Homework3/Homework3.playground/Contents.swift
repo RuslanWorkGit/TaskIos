@@ -48,3 +48,5 @@ text2.isPolindrome()
 let text3 = "арозаупаланалапуазора"
 text3.isPolindrome()
 
+// Task 4
+

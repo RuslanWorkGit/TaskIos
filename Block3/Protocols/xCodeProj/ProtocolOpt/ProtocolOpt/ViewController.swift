@@ -176,29 +176,7 @@ class ViewController: UIViewController {
     }
     
     struct Clerk: Clerks {
-//        func alarm() {
-//            print("Clerk use alarm system")
-//        }
-        
-//        func lie() {
-//            print("Clerk lie on the floor")
-//        }
-//        
-//        func Hide() {
-//            print("Clerk hidding under his work space")
-//        }
-//        
-//        func routinWork() {
-//            print("Clerk maiking routing work on his compute")
-//        }
-//        
-//        func giveCash() {
-//            print("Clerk give cash")
-//        }
-//        
-//        func takeCash() {
-//            print("Clerk take cash")
-//        }
+
     }
     struct Civilian: Civilians, Hiding {
         func Hide() {
@@ -218,32 +196,6 @@ class ViewController: UIViewController {
     struct Robber: Rober, Cash{
         
         var name: String?
-
-//        func money() {
-//            print("The robbers aske to give hime a money")
-//        }
-//
-//        func Hide() {
-//            print("The robber \(name ?? "Unnown" ) wants to hide from superheroes")
-//        }
-//
-//        func lie() {
-//            print("The robber \(name ?? "Unnown") lie on the floor becouse superhero assked to do it")
-//        }
-//
-//        func fire() {
-//            print("The robber \(name ?? "Unnown") fire to the ceiling")
-//        }
-//
-//        func threaten() {
-//            print("The robber \(name ?? "Unnown") threatens with a weapon")
-//        }
-//
-//        func breakIn() {
-//            print("Robber \(name ?? "Unnown") push the door and came into the bank")
-//        }
-        
-        
     }
     struct Guardian: Gun, Protecting{
         func fire() {
@@ -257,42 +209,11 @@ class ViewController: UIViewController {
         func protect() {
             print("Guardians protect the territory")
         }
-        
-        
     }
     struct Manager : Managers {
-//        func alarm() {
-//            print("Manager use alarm system")
-//        }
-        
-//        func routinWork() {
-//            print("Manager make his routing work")
-//        }
-//
-//        func giveCash() {
-//            print("Manager give cash to robbers")
-//        }
-//
-//        func takeCash() {
-//            print("Manager take money from the super hero")
-//        }
-        
-        
     }
     struct SuperHero : BreakIn, Hero {
         var name: String?
-
-//        func breakIn() {
-//            print("The hero \(name ?? "Unnown") break into the bank")
-//        }
-//        
-//        func fire() {
-//            print("superheroes put all the robbers on the floor")
-//        }
-//        
-//        func threaten() {
-//            print("The hores asked to the robber give up")
-//        }
     }
 
     class Bank {
@@ -370,9 +291,6 @@ class ViewController: UIViewController {
     let superhero1 = SuperHero(name: "Captain America")
     let superhero2 = SuperHero(name: "Spider-Man")
     let superhero3 = SuperHero(name: "Iron Man")
-
-    
-    
 }
 
 

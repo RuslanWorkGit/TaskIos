@@ -8,7 +8,7 @@
 import UIKit
 
 protocol Alarm {
-    func alarm()
+    //func alarm()
 }
 
 protocol Work: Alarm {
@@ -46,6 +46,12 @@ protocol Gun {
     func threaten()
 }
 
+protocol Clerks: Work, Hiding{
+}
+
+protocol Managers: Work {
+}
+
 protocol Rober: Gun, BreakIn, Hiding{
     var name: String? {get set}
 }
@@ -55,6 +61,86 @@ protocol Hero: Gun, BreakIn{
     var name: String? {get set}
 }
 
+//Extenision
+extension Alarm {
+    func alarm() {print("Someone use alarm system")}
+}
+
+extension Managers {
+    func routinWork() {
+        print("Manager start routing work")
+    }
+    
+    func giveCash() {
+        print("Manager give cash to robbers")
+    }
+    
+    func takeCash() {
+        print("Manager take money from the super hero")
+    }
+}
+
+extension Clerks {
+    func lie() {
+        print("Clerk lie on the floor")
+    }
+    
+    func Hide() {
+        print("Clerk hidding under his work space")
+    }
+    
+    func routinWork() {
+        print("Clerk maiking routing work on his compute")
+    }
+    
+    func giveCash() {
+        print("Clerk give cash")
+    }
+    
+    func takeCash() {
+        print("Clerk take cash")
+    }
+}
+
+extension Rober {
+    func money() {
+        print("The robbers aske to give hime a money")
+    }
+    
+    func Hide() {
+        print("The robber \(name ?? "Unnown" ) wants to hide from superheroes")
+    }
+    
+    func lie() {
+        print("The robber \(name ?? "Unnown") lie on the floor becouse superhero assked to do it")
+    }
+    
+    func fire() {
+        print("The robber \(name ?? "Unnown") fire to the ceiling")
+    }
+    
+    func threaten() {
+        print("The robber \(name ?? "Unnown") threatens with a weapon")
+    }
+    
+    func breakIn() {
+        print("Robber \(name ?? "Unnown") push the door and came into the bank")
+    }
+}
+
+extension Hero {
+    func breakIn() {
+        print("The hero \(name ?? "Unnown") break into the bank")
+    }
+    
+    func fire() {
+        print("superheroes put all the robbers on the floor")
+    }
+    
+    func threaten() {
+        print("The hores asked to the robber give up")
+    }
+}
 class ViewController: UIViewController {
 
     @IBOutlet weak var startDayButton: UIButton!
@@ -75,7 +161,7 @@ class ViewController: UIViewController {
     
     let bankWork = Bank()
     @IBAction func startDayButton(_ sender: Any) {
-        startDayButton.backgroundColor = .red
+        startDayButton.backgroundColor = .red //--- Чому в червоний краситься кнопка Start Robbery?
         bankWork.startWork()
     }
     
@@ -89,30 +175,30 @@ class ViewController: UIViewController {
         bankWork.superhero(hero: bankWork.superhero)
     }
     
-    struct Clerk: Work, Hiding {
-        func alarm() {
-            print("Clerk use alarm system")
-        }
+    struct Clerk: Clerks {
+//        func alarm() {
+//            print("Clerk use alarm system")
+//        }
         
-        func lie() {
-            print("Clerk lie on the floor")
-        }
-        
-        func Hide() {
-            print("Clerk hidding under his work space")
-        }
-        
-        func routinWork() {
-            print("Clerk maiking routing work on his compute")
-        }
-        
-        func giveCash() {
-            print("Clerk give cash")
-        }
-        
-        func takeCash() {
-            print("Clerk take cash")
-        }
+//        func lie() {
+//            print("Clerk lie on the floor")
+//        }
+//        
+//        func Hide() {
+//            print("Clerk hidding under his work space")
+//        }
+//        
+//        func routinWork() {
+//            print("Clerk maiking routing work on his compute")
+//        }
+//        
+//        func giveCash() {
+//            print("Clerk give cash")
+//        }
+//        
+//        func takeCash() {
+//            print("Clerk take cash")
+//        }
     }
     struct Civilian: Civilians, Hiding {
         func Hide() {
@@ -133,29 +219,29 @@ class ViewController: UIViewController {
         
         var name: String?
 
-        func money() {
-            print("The robbers aske to give hime a money")
-        }
-        
-        func Hide() {
-            print("The robber \(name ?? "Unnown" ) wants to hide from superheroes")
-        }
-        
-        func lie() {
-            print("The robber \(name ?? "Unnown") lie on the floor becouse superhero assked to do it")
-        }
-        
-        func fire() {
-            print("The robber \(name ?? "Unnown") fire to the ceiling")
-        }
-        
-        func threaten() {
-            print("The robber \(name ?? "Unnown") threatens with a weapon")
-        }
-        
-        func breakIn() {
-            print("Robber \(name ?? "Unnown") push the door and came into the bank")
-        }
+//        func money() {
+//            print("The robbers aske to give hime a money")
+//        }
+//
+//        func Hide() {
+//            print("The robber \(name ?? "Unnown" ) wants to hide from superheroes")
+//        }
+//
+//        func lie() {
+//            print("The robber \(name ?? "Unnown") lie on the floor becouse superhero assked to do it")
+//        }
+//
+//        func fire() {
+//            print("The robber \(name ?? "Unnown") fire to the ceiling")
+//        }
+//
+//        func threaten() {
+//            print("The robber \(name ?? "Unnown") threatens with a weapon")
+//        }
+//
+//        func breakIn() {
+//            print("Robber \(name ?? "Unnown") push the door and came into the bank")
+//        }
         
         
     }
@@ -174,39 +260,39 @@ class ViewController: UIViewController {
         
         
     }
-    struct Manager : Work {
-        func alarm() {
-            print("Manager use alarm system")
-        }
+    struct Manager : Managers {
+//        func alarm() {
+//            print("Manager use alarm system")
+//        }
         
-        func routinWork() {
-            print("Manager make his routing work")
-        }
-        
-        func giveCash() {
-            print("Manager give cask to robbers")
-        }
-        
-        func takeCash() {
-            print("Manager take money from the super hero")
-        }
+//        func routinWork() {
+//            print("Manager make his routing work")
+//        }
+//
+//        func giveCash() {
+//            print("Manager give cash to robbers")
+//        }
+//
+//        func takeCash() {
+//            print("Manager take money from the super hero")
+//        }
         
         
     }
     struct SuperHero : BreakIn, Hero {
         var name: String?
 
-        func breakIn() {
-            print("The hero \(name ?? "Unnown") break into the bank")
-        }
-        
-        func fire() {
-            print("superheroes put all the robbers on the floor")
-        }
-        
-        func threaten() {
-            print("The hores asked to the robber give up")
-        }
+//        func breakIn() {
+//            print("The hero \(name ?? "Unnown") break into the bank")
+//        }
+//        
+//        func fire() {
+//            print("superheroes put all the robbers on the floor")
+//        }
+//        
+//        func threaten() {
+//            print("The hores asked to the robber give up")
+//        }
     }
 
     class Bank {

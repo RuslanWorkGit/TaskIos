@@ -3,6 +3,7 @@ import UIKit
 // Task 1 - https://github.com/RuslanWorkGit/TaskIos/blob/master/Block3/Protocols/Practice/PracticeProtocol.playground/Contents.swift
 
 // Task 2 - https://github.com/RuslanWorkGit/TaskIos/blob/master/Block3/Protocols/MyOwnTask/MyTask.playground/Contents.swift
+// У проекті xCode -  https://github.com/RuslanWorkGit/TaskIos/blob/0d3947c58dfea94058762f244b42c4da49a2e183/Block3/Protocols/xCodeProj/ProtocolOpt/ProtocolOpt/ViewController.swift
 
 // Task 3
 
@@ -48,5 +49,8 @@ text2.isPolindrome()
 let text3 = "арозаупаланалапуазора"
 text3.isPolindrome()
 
-// Task 4
+// Task 4 - https://github.com/RuslanWorkGit/TaskIos/blob/master/Block3/Protocols/xCodeProj/ProtocolOpt/ProtocolOpt/ViewController.swift
 
+// Task 5 - https://github.com/RuslanWorkGit/TaskIos/blob/0d3947c58dfea94058762f244b42c4da49a2e183/Block3/Generic/Generic.playground/Contents.swift
+
+//Task 6 - 

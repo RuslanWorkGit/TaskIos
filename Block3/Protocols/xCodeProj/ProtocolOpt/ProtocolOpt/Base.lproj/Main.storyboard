@@ -75,7 +75,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="startDayButton" destination="Agj-kb-Z9K" id="Shh-73-r4y"/>
+                        <outlet property="startDayButton" destination="Dyy-4B-HW8" id="T1Z-SK-wjs"/>
                         <outlet property="startRobberyButton" destination="Agj-kb-Z9K" id="GZK-7L-ISe"/>
                         <outlet property="startSuperheroButton" destination="ea3-uw-mU0" id="hrd-Ha-Jte"/>
                     </connections>

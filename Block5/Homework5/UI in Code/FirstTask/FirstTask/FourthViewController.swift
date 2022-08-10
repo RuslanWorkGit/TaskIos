@@ -22,31 +22,67 @@ class FourthViewController: UIViewController {
         let circleMain = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.width)
         let mainCircle = MyView(frame: circleMain)
         mainCircle.center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
-        mainCircle.backgroundColor = .gray
+        //mainCircle.backgroundColor = .gray
+        mainCircle.clipsToBounds = true
         view.addSubview(mainCircle)
         
-        func addRedCircle() {
-            let circle = CGRect(x: view.bounds.minX, y: view.bounds.midY - 220, width: view.bounds.width * 0.65, height: view.bounds.width * 0.65)
-            let redCircle = MyView(frame: circle)
-            redCircle.backgroundColor = .red
-            mainCircle.addSubview(redCircle)
-        }
-        addRedCircle()
-        
-        func addYellowCircle() {
-            
+        func addSomeCircle(xPos: CGFloat, yPos: CGFloat, circleWidth: CGFloat, color: UIColor) {
+            let circle = CGRect(x: xPos, y: yPos, width: circleWidth, height: circleWidth)
+            let someCircle = MyView(frame: circle)
+            someCircle.backgroundColor = color
+            someCircle.clipsToBounds = true
+            mainCircle.addSubview(someCircle)
         }
         
-        func addGreenCircle() {
-            
-        }
+        //Red Circle
+        addSomeCircle(xPos: mainCircle.bounds.minX - 50, yPos: mainCircle.bounds.minY - 40, circleWidth: view.bounds.width * 0.7, color: .red)
         
-        func addBlueCircle() {
-            
-        }
+        //Yellow Circle
+        addSomeCircle(xPos: mainCircle.bounds.midX - 20, yPos: mainCircle.bounds.minY - 40, circleWidth: view.bounds.width * 0.7, color: .systemYellow)
+        
+        //Green Circle
+        addSomeCircle(xPos: mainCircle.bounds.midX - 20, yPos: mainCircle.bounds.midY - 40, circleWidth: view.bounds.width * 0.7, color: .systemGreen)
+        
+        //Blue Circle
+        addSomeCircle(xPos: mainCircle.bounds.minX - 50, yPos: mainCircle.bounds.midY - 40, circleWidth: view.bounds.width * 0.7, color: .systemBlue)
+        
+        
+//
+//        func addRedCircle() {
+//            let circle = CGRect(x: mainCircle.bounds.minX - 50, y: mainCircle.bounds.minY - 40, width: view.bounds.width * 0.70, height: view.bounds.width * 0.70)
+//            let redCircle = MyView(frame: circle)
+//            redCircle.backgroundColor = .red
+//            redCircle.clipsToBounds = true
+//            mainCircle.addSubview(redCircle)
+//        }
+//        addRedCircle()
+//
+//        func addYellowCircle() {
+//            let circle = CGRect(x: mainCircle.bounds.midX - 20, y: mainCircle.bounds.minY - 40, width: view.bounds.width * 0.70, height: view.bounds.width * 0.70)
+//            let yellowCircle = MyView(frame: circle)
+//            yellowCircle.backgroundColor = . systemYellow
+//            yellowCircle.clipsToBounds = true
+//            mainCircle.addSubview(yellowCircle)
+//        }
+//        addYellowCircle()
+//
+//        func addGreenCircle() {
+//            let circle = CGRect(x: mainCircle.bounds.midX - 20, y: mainCircle.bounds.midY - 40, width: view.bounds.width * 0.7, height: view.bounds.width * 0.7)
+//            let greenCircle = MyView(frame: circle)
+//            greenCircle.backgroundColor = .systemGreen
+//            greenCircle.clipsToBounds = true
+//            mainCircle.addSubview(greenCircle)
+//        }
+//        addGreenCircle()
+//
+//        func addBlueCircle() {
+//            let circle = CGRect(x: mainCircle.bounds.minX - 50, y: mainCircle.bounds.midY - 40, width: view.bounds.width * 0.70, height: view.bounds.width * 0.70)
+//            let blueCircle = MyView(frame: circle)
+//            blueCircle.backgroundColor = .systemBlue
+//            blueCircle.clipsToBounds = true
+//            mainCircle.addSubview(blueCircle)
+//        }
+//        addBlueCircle()
     }
-    
-   
-    
 
 }

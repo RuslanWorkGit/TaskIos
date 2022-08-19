@@ -9,7 +9,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    let circle = UIView.init(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+    let time: Double = 1
+    let circle = UIView.init(frame: CGRect(x: 50, y: 50, width: 70, height: 70))
    
 
     override func viewDidLoad() {
@@ -18,23 +19,23 @@ class SecondViewController: UIViewController {
         circle.layer.cornerRadius = self.circle.frame.width / 2
         circle.backgroundColor = .systemBrown
         view.addSubview(circle)
-        animations()
+
     }
     
-    func animations() {
-        UIView.animate(withDuration: 1, delay: 0) {
-            self.circle.frame = CGRect(x: self.view.frame.maxX - 100, y: 0, width: 100, height: 100)
+    @IBAction func startAnimation(_ sender: Any) {
+        UIView.animate(withDuration: time, delay: 0) {
+            self.circle.frame = CGRect(x: self.view.frame.maxX - 100 , y: 50, width: 70, height: 70)
         } completion: { done in
-            UIView.animate(withDuration: 1, delay: 0) {
-                self.circle.frame = CGRect(x: self.view.frame.maxX - 100, y: self.view.frame.maxY - 100, width: 100, height: 100)
+            UIView.animate(withDuration: self.time, delay: 0) {
+                self.circle.frame = CGRect(x: self.view.frame.maxX - 100, y: self.view.frame.maxY - 150, width: 70, height: 70)
             } completion: { done in
-                UIView.animate(withDuration: 1, delay: 0) {
-                    self.circle.frame = CGRect(x: 0, y: self.view.frame.maxY - 100, width: 100, height: 100)
+                UIView.animate(withDuration: self.time, delay: 0) {
+                    self.circle.frame = CGRect(x: 50, y: self.view.frame.maxY - 150, width: 70, height: 70)
                 } completion: { done in
-                    UIView.animate(withDuration: 1, delay: 0) {
-                        self.circle.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+                    UIView.animate(withDuration: self.time, delay: 0) {
+                        self.circle.frame = CGRect(x: 50, y: 50, width: 70, height: 70)
                     } completion: { done in
-                        UIView.animate(withDuration: 1, delay: 0) {
+                        UIView.animate(withDuration: self.time, delay: 0) {
                             self.circle.alpha = 0
                         }
                     }
@@ -47,5 +48,5 @@ class SecondViewController: UIViewController {
 
     }
     
-
+    
 }

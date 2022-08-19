@@ -64,6 +64,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WTX-kf-BmJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7FI-tA-Jhk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -100,14 +101,40 @@
                     <view key="view" contentMode="scaleToFill" id="ao5-ul-5dX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9n-6q-O7r">
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HC5-0b-7zJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="bOH-9i-Wra"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="RUN!">
+                                            <attributes>
+                                                <font key="NSFont" size="29" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startAnimation:" destination="VJe-Iu-f04" eventType="touchUpInside" id="f4l-0B-LdZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aT8-fk-xkW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X9n-6q-O7r" firstAttribute="centerX" secondItem="ao5-ul-5dX" secondAttribute="centerX" id="MOh-Ki-0OF"/>
+                            <constraint firstItem="X9n-6q-O7r" firstAttribute="centerY" secondItem="ao5-ul-5dX" secondAttribute="centerY" id="uiV-7f-nv1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="CVM-nE-5is"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dnp-Vo-YyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1189" y="375"/>
+            <point key="canvasLocation" x="1188.4057971014495" y="375"/>
         </scene>
     </scenes>
     <resources>

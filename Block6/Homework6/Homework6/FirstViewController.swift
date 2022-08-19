@@ -17,7 +17,6 @@ class FirstViewController: UIViewController {
         bounceBall.backgroundColor = .red
         bounceBall.layer.cornerRadius = bounceBall.frame.width / 2
         
-        
     }
     
     
@@ -25,7 +24,7 @@ class FirstViewController: UIViewController {
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 1) {
             self.bounceBall.center = self.view.center
         } completion: { completed in
-            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 1) {
+            UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5) {
                 self.bounceBall.center = CGPoint(x: self.view.frame.midX, y: self.view.frame.maxY - 200)
             } completion: { done in
                 self.bounceButtonStart((Any).self)

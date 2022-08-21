@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44A624F328B0F71B00B7E0C6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A624F228B0F71B00B7E0C6 /* ThirdViewController.swift */; };
+		44A624F928B15ACA00B7E0C6 /* firstMafia.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A624F528B15AC900B7E0C6 /* firstMafia.json */; };
+		44A624FA28B15ACA00B7E0C6 /* secondMafia.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A624F628B15AC900B7E0C6 /* secondMafia.json */; };
+		44A624FB28B15ACA00B7E0C6 /* fourthMafia.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A624F728B15AC900B7E0C6 /* fourthMafia.json */; };
+		44A624FC28B15ACA00B7E0C6 /* thirdMafia.json in Resources */ = {isa = PBXBuildFile; fileRef = 44A624F828B15AC900B7E0C6 /* thirdMafia.json */; };
 		44CCE87428AE41E900D4F3F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE87328AE41E900D4F3F9 /* AppDelegate.swift */; };
 		44CCE87628AE41E900D4F3F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE87528AE41E900D4F3F9 /* SceneDelegate.swift */; };
 		44CCE87828AE41E900D4F3F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE87728AE41E900D4F3F9 /* ViewController.swift */; };
@@ -15,9 +20,15 @@
 		44CCE88028AE41ED00D4F3F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE87E28AE41ED00D4F3F9 /* LaunchScreen.storyboard */; };
 		44CCE88828AE426B00D4F3F9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE88728AE426B00D4F3F9 /* FirstViewController.swift */; };
 		44CCE88A28AEBF6B00D4F3F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE88928AEBF6B00D4F3F9 /* SecondViewController.swift */; };
+		45772B4B55C5DCA2AAE470BE /* Pods_Homework6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B08EF000774F2DFDD22FD4 /* Pods_Homework6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44A624F228B0F71B00B7E0C6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		44A624F528B15AC900B7E0C6 /* firstMafia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = firstMafia.json; sourceTree = "<group>"; };
+		44A624F628B15AC900B7E0C6 /* secondMafia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = secondMafia.json; sourceTree = "<group>"; };
+		44A624F728B15AC900B7E0C6 /* fourthMafia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourthMafia.json; sourceTree = "<group>"; };
+		44A624F828B15AC900B7E0C6 /* thirdMafia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thirdMafia.json; sourceTree = "<group>"; };
 		44CCE87028AE41E900D4F3F9 /* Homework6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CCE87328AE41E900D4F3F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CCE87528AE41E900D4F3F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +39,9 @@
 		44CCE88128AE41ED00D4F3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44CCE88728AE426B00D4F3F9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		44CCE88928AEBF6B00D4F3F9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7F9651FC7A15DC6A086C5360 /* Pods-Homework6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework6.debug.xcconfig"; path = "Target Support Files/Pods-Homework6/Pods-Homework6.debug.xcconfig"; sourceTree = "<group>"; };
+		C7B08EF000774F2DFDD22FD4 /* Pods_Homework6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D68EA6F594D956B79ADFDD69 /* Pods-Homework6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework6.release.xcconfig"; path = "Target Support Files/Pods-Homework6/Pods-Homework6.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45772B4B55C5DCA2AAE470BE /* Pods_Homework6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A624F428B15AAC00B7E0C6 /* Lottie Figure */ = {
+			isa = PBXGroup;
+			children = (
+				44A624F528B15AC900B7E0C6 /* firstMafia.json */,
+				44A624F728B15AC900B7E0C6 /* fourthMafia.json */,
+				44A624F628B15AC900B7E0C6 /* secondMafia.json */,
+				44A624F828B15AC900B7E0C6 /* thirdMafia.json */,
+			);
+			path = "Lottie Figure";
+			sourceTree = "<group>";
+		};
 		44CCE86728AE41E900D4F3F9 = {
 			isa = PBXGroup;
 			children = (
 				44CCE87228AE41E900D4F3F9 /* Homework6 */,
 				44CCE87128AE41E900D4F3F9 /* Products */,
+				A319A9D22AC1514A55D58E10 /* Pods */,
+				9A947FA916DBB8BAED738103 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +88,36 @@
 		44CCE87228AE41E900D4F3F9 /* Homework6 */ = {
 			isa = PBXGroup;
 			children = (
+				44A624F428B15AAC00B7E0C6 /* Lottie Figure */,
 				44CCE87328AE41E900D4F3F9 /* AppDelegate.swift */,
 				44CCE87528AE41E900D4F3F9 /* SceneDelegate.swift */,
 				44CCE87728AE41E900D4F3F9 /* ViewController.swift */,
 				44CCE88728AE426B00D4F3F9 /* FirstViewController.swift */,
 				44CCE88928AEBF6B00D4F3F9 /* SecondViewController.swift */,
+				44A624F228B0F71B00B7E0C6 /* ThirdViewController.swift */,
 				44CCE87928AE41E900D4F3F9 /* Main.storyboard */,
 				44CCE87C28AE41ED00D4F3F9 /* Assets.xcassets */,
 				44CCE87E28AE41ED00D4F3F9 /* LaunchScreen.storyboard */,
 				44CCE88128AE41ED00D4F3F9 /* Info.plist */,
 			);
 			path = Homework6;
+			sourceTree = "<group>";
+		};
+		9A947FA916DBB8BAED738103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7B08EF000774F2DFDD22FD4 /* Pods_Homework6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A319A9D22AC1514A55D58E10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F9651FC7A15DC6A086C5360 /* Pods-Homework6.debug.xcconfig */,
+				D68EA6F594D956B79ADFDD69 /* Pods-Homework6.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44CCE88428AE41ED00D4F3F9 /* Build configuration list for PBXNativeTarget "Homework6" */;
 			buildPhases = (
+				C099F5F62694762EC8EC29AA /* [CP] Check Pods Manifest.lock */,
 				44CCE86C28AE41E900D4F3F9 /* Sources */,
 				44CCE86D28AE41E900D4F3F9 /* Frameworks */,
 				44CCE86E28AE41E900D4F3F9 /* Resources */,
+				67034B2E4E3D5D5C6AD1F95E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +181,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CCE88028AE41ED00D4F3F9 /* LaunchScreen.storyboard in Resources */,
+				44A624F928B15ACA00B7E0C6 /* firstMafia.json in Resources */,
+				44A624FC28B15ACA00B7E0C6 /* thirdMafia.json in Resources */,
+				44A624FB28B15ACA00B7E0C6 /* fourthMafia.json in Resources */,
 				44CCE87D28AE41ED00D4F3F9 /* Assets.xcassets in Resources */,
+				44A624FA28B15ACA00B7E0C6 /* secondMafia.json in Resources */,
 				44CCE87B28AE41E900D4F3F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67034B2E4E3D5D5C6AD1F95E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework6/Pods-Homework6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Homework6/Pods-Homework6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Homework6/Pods-Homework6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C099F5F62694762EC8EC29AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44CCE86C28AE41E900D4F3F9 /* Sources */ = {
@@ -148,6 +243,7 @@
 				44CCE87428AE41E900D4F3F9 /* AppDelegate.swift in Sources */,
 				44CCE87628AE41E900D4F3F9 /* SceneDelegate.swift in Sources */,
 				44CCE88A28AEBF6B00D4F3F9 /* SecondViewController.swift in Sources */,
+				44A624F328B0F71B00B7E0C6 /* ThirdViewController.swift in Sources */,
 				44CCE88828AE426B00D4F3F9 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +386,7 @@
 		};
 		44CCE88528AE41ED00D4F3F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9651FC7A15DC6A086C5360 /* Pods-Homework6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +414,7 @@
 		};
 		44CCE88628AE41ED00D4F3F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D68EA6F594D956B79ADFDD69 /* Pods-Homework6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

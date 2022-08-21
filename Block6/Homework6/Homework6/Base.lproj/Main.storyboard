@@ -61,7 +61,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="STi-g2-WF4">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WTX-kf-BmJ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" id="WTX-kf-BmJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7FI-tA-Jhk">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -81,7 +81,7 @@
         <!--Item-->
         <scene sceneID="Xg6-i0-b8u">
             <objects>
-                <viewController id="gfF-6F-4HO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThirdViewController" id="gfF-6F-4HO" customClass="ThirdViewController" customModule="Homework6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYN-O0-5R7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPG-SW-ba9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1171" y="1033"/>
+            <point key="canvasLocation" x="1188" y="1098"/>
         </scene>
         <!--Item-->
         <scene sceneID="x3L-33-vrG">

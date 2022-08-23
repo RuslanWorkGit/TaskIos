@@ -146,9 +146,6 @@
             <point key="canvasLocation" x="34.390243902439025" y="97.627118644067806"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="tjp-0Q-sbf"/>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

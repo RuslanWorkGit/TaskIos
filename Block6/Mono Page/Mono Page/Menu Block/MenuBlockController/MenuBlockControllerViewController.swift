@@ -17,6 +17,7 @@ class MenuBlockControllerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        exchangeRate.config(firstCurrency: .USA, secondCurrency: .Poland)
         
         archive.configure(with: "Archive", image: UIImage(named: "archive")!)
         buingInParts.configure(with: "Buing in \n Parts", image: UIImage(named: "puzzle")!)

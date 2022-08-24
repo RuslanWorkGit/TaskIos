@@ -29,6 +29,7 @@ class MenuBlock: UIView {
     func commonInit() {
         Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
         mainView.layer.cornerRadius = 25
+        
         mainView.fixInView(self)
 
         

@@ -30,13 +30,13 @@
                                 <constraint firstAttribute="height" constant="80" id="pzl-BK-M2z"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-RO-hVU">
-                            <rect key="frame" x="30" y="140" width="300" height="50"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhr-RO-hVU">
+                            <rect key="frame" x="30" y="130" width="300" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="300" id="LUa-mg-I0O"/>
-                                <constraint firstAttribute="height" constant="50" id="YlB-VY-80S"/>
+                                <constraint firstAttribute="height" constant="70" id="YlB-VY-80S"/>
                             </constraints>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <color key="textColor" systemColor="systemBackgroundColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -44,7 +44,7 @@
                     <color key="backgroundColor" red="0.15241029090488079" green="0.15241029090488079" blue="0.15241029090488079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="0AD-tQ-SGZ" firstAttribute="top" secondItem="ayq-iW-bi3" secondAttribute="top" constant="30" id="3Wb-Cd-u0v"/>
-                        <constraint firstItem="Qhr-RO-hVU" firstAttribute="top" secondItem="0AD-tQ-SGZ" secondAttribute="bottom" constant="30" id="7r7-8M-A5R"/>
+                        <constraint firstItem="Qhr-RO-hVU" firstAttribute="top" secondItem="0AD-tQ-SGZ" secondAttribute="bottom" constant="20" id="7r7-8M-A5R"/>
                         <constraint firstItem="Qhr-RO-hVU" firstAttribute="leading" secondItem="ayq-iW-bi3" secondAttribute="leading" constant="30" id="WfR-2W-rBN"/>
                         <constraint firstItem="0AD-tQ-SGZ" firstAttribute="leading" secondItem="ayq-iW-bi3" secondAttribute="leading" constant="30" id="hFY-5z-clt"/>
                     </constraints>

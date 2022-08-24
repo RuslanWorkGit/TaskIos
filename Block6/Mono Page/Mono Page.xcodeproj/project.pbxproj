@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44BD494528B50BC100D68689 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD494428B50BC100D68689 /* ExchangeRates.swift */; };
+		44BD494728B50BE600D68689 /* ExchangeRates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BD494628B50BE600D68689 /* ExchangeRates.xib */; };
 		44C4722128B36639007EBF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4722028B36639007EBF74 /* AppDelegate.swift */; };
 		44C4722328B36639007EBF74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4722228B36639007EBF74 /* SceneDelegate.swift */; };
 		44C4722528B36639007EBF74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C4722428B36639007EBF74 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44BD494428B50BC100D68689 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		44BD494628B50BE600D68689 /* ExchangeRates.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRates.xib; sourceTree = "<group>"; };
 		44C4721D28B36639007EBF74 /* Mono Page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mono Page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C4722028B36639007EBF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C4722228B36639007EBF74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44BD494328B50B9A00D68689 /* Exchange Rates */ = {
+			isa = PBXGroup;
+			children = (
+				44BD494428B50BC100D68689 /* ExchangeRates.swift */,
+				44BD494628B50BE600D68689 /* ExchangeRates.xib */,
+			);
+			path = "Exchange Rates";
+			sourceTree = "<group>";
+		};
 		44C4721428B36639007EBF74 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		44C4721F28B36639007EBF74 /* Mono Page */ = {
 			isa = PBXGroup;
 			children = (
+				44BD494328B50B9A00D68689 /* Exchange Rates */,
 				44C4723428B39F99007EBF74 /* Menu Block */,
 				44C4722028B36639007EBF74 /* AppDelegate.swift */,
 				44C4722228B36639007EBF74 /* SceneDelegate.swift */,
@@ -153,6 +167,7 @@
 				44C4722D28B3663E007EBF74 /* LaunchScreen.storyboard in Resources */,
 				44C4722A28B3663E007EBF74 /* Assets.xcassets in Resources */,
 				44C4723828B3A30D007EBF74 /* MenuBlock.xib in Resources */,
+				44BD494728B50BE600D68689 /* ExchangeRates.xib in Resources */,
 				44C4722828B36639007EBF74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +183,7 @@
 				44C4722128B36639007EBF74 /* AppDelegate.swift in Sources */,
 				44C4723628B3A2D9007EBF74 /* MenuBlock.swift in Sources */,
 				44C4722328B36639007EBF74 /* SceneDelegate.swift in Sources */,
+				44BD494528B50BC100D68689 /* ExchangeRates.swift in Sources */,
 				44C4723B28B3AA85007EBF74 /* MenuBlockControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

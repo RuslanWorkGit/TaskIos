@@ -11,17 +11,18 @@ class MenuBlockControllerViewController: UIViewController {
     
     @IBOutlet weak var archive: MenuBlock!
     @IBOutlet weak var buingInParts: MenuBlock!
+    @IBOutlet weak var installmentCard: MenuBlock!
+    
+    @IBOutlet weak var exchangeRate: ExchangeRates!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         archive.configure(with: "Archive", image: UIImage(named: "archive")!)
         buingInParts.configure(with: "Buing in \n Parts", image: UIImage(named: "puzzle")!)
-
-        let firstBlock = MenuBlock(frame: CGRect(x: 20, y: 300, width: 375, height: 200))
-        firstBlock.configure(with: "New Lable", image: UIImage(named: "calendar")!)
+        installmentCard.configure(with: "Installment card", image: UIImage(named: "calendar")!)
     
-        self.view.addSubview(firstBlock)
+       
     }
 
 }

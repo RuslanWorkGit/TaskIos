@@ -17,12 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2t-Ic-2He" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
-                                <rect key="frame" x="20" y="520" width="177" height="200"/>
+                                <rect key="frame" x="20" y="575" width="177" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-Bw-quV" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
-                                <rect key="frame" x="219" y="520" width="177" height="200"/>
+                                <rect key="frame" x="219" y="575" width="177" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wp5-5a-6DN" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
+                                <rect key="frame" x="20" y="352" width="376" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-d8-hNy" customClass="ExchangeRates" customModule="Mono_Page" customModuleProvider="target">
+                                <rect key="frame" x="20" y="81" width="374" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -33,6 +43,8 @@
                     <connections>
                         <outlet property="archive" destination="RMk-Bw-quV" id="iY8-iY-dld"/>
                         <outlet property="buingInParts" destination="V2t-Ic-2He" id="kCu-25-6WZ"/>
+                        <outlet property="exchangeRate" destination="FjO-d8-hNy" id="tnK-aO-lpX"/>
+                        <outlet property="installmentCard" destination="Wp5-5a-6DN" id="Pt9-No-aaQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

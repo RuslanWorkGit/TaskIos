@@ -12,8 +12,11 @@ class MenuBlockControllerViewController: UIViewController {
     @IBOutlet weak var archive: MenuBlock!
     @IBOutlet weak var buingInParts: MenuBlock!
     @IBOutlet weak var installmentCard: MenuBlock!
-    
     @IBOutlet weak var exchangeRate: ExchangeRates!
+    
+    @IBOutlet weak var leftIcon: UIImageView!
+    @IBOutlet weak var rightIcon: UIImageView!
+    @IBOutlet weak var flag: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +25,10 @@ class MenuBlockControllerViewController: UIViewController {
         archive.configure(with: "Archive", image: UIImage(named: "archive")!)
         buingInParts.configure(with: "Buing in \n Parts", image: UIImage(named: "puzzle")!)
         installmentCard.configure(with: "Installment card", image: UIImage(named: "calendar")!)
-    
+        
+        leftIcon.image = UIImage(named: "ukraine")
+        rightIcon.image = UIImage(named: "coat-of-arms")
+        flag.image = UIImage(named: "ukraineFlag")
        
     }
 

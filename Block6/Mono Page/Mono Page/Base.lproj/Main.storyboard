@@ -16,35 +16,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2t-Ic-2He" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHk-WB-Y6W" userLabel="GrayView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="223"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qg6-r5-nL6">
+                                        <rect key="frame" x="180" y="52" width="54" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-d8-hNy" customClass="ExchangeRates" customModule="Mono_Page" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="89" width="374" height="74"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.24954310060000001" green="0.32434150579999999" blue="0.39216700199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Qg6-r5-nL6" firstAttribute="top" secondItem="ZHk-WB-Y6W" secondAttribute="top" constant="52" id="3mc-e8-l28"/>
+                                    <constraint firstAttribute="bottom" secondItem="FjO-d8-hNy" secondAttribute="bottom" constant="60" id="FcC-2V-IKm"/>
+                                    <constraint firstAttribute="trailing" secondItem="FjO-d8-hNy" secondAttribute="trailing" constant="20" id="VjN-Ji-3fe"/>
+                                    <constraint firstItem="FjO-d8-hNy" firstAttribute="top" secondItem="Qg6-r5-nL6" secondAttribute="bottom" constant="8" id="mAy-le-fmy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qg6-r5-nL6" secondAttribute="trailing" constant="180" id="r4I-fl-eJc"/>
+                                    <constraint firstItem="FjO-d8-hNy" firstAttribute="top" secondItem="ZHk-WB-Y6W" secondAttribute="top" constant="89" id="s1V-3O-YQI"/>
+                                    <constraint firstItem="Qg6-r5-nL6" firstAttribute="leading" secondItem="ZHk-WB-Y6W" secondAttribute="leading" constant="180" id="tDP-pI-Prm"/>
+                                    <constraint firstItem="FjO-d8-hNy" firstAttribute="leading" secondItem="ZHk-WB-Y6W" secondAttribute="leading" constant="20" id="xa2-ja-rFH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DW5-0s-gis" userLabel="GreenView">
+                                <rect key="frame" x="0.0" y="223" width="414" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfZ-xt-OrE">
+                                        <rect key="frame" x="137" y="0.0" width="141" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rd9-AL-6UE">
+                                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cxa-f9-pxd">
+                                        <rect key="frame" x="366" y="8" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jq7-9i-nIL">
+                                        <rect key="frame" x="172" y="68" width="70" height="50"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25282394889999998" green="0.55108153820000005" blue="0.36467862130000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="cxa-f9-pxd" firstAttribute="height" secondItem="DW5-0s-gis" secondAttribute="height" multiplier="0.206186" id="0im-C4-Ujs"/>
+                                    <constraint firstItem="Jq7-9i-nIL" firstAttribute="height" secondItem="DW5-0s-gis" secondAttribute="height" multiplier="0.257732" id="3jE-J6-JE1"/>
+                                    <constraint firstAttribute="trailing" secondItem="bfZ-xt-OrE" secondAttribute="trailing" constant="136" id="Cgk-vp-CU4"/>
+                                    <constraint firstItem="Jq7-9i-nIL" firstAttribute="centerX" secondItem="DW5-0s-gis" secondAttribute="centerX" id="FuU-sm-3c4"/>
+                                    <constraint firstItem="cxa-f9-pxd" firstAttribute="width" secondItem="DW5-0s-gis" secondAttribute="width" multiplier="0.0966184" id="K8T-He-kla"/>
+                                    <constraint firstItem="Jq7-9i-nIL" firstAttribute="width" secondItem="DW5-0s-gis" secondAttribute="width" multiplier="0.169082" id="NLU-Z6-0Tj"/>
+                                    <constraint firstItem="Jq7-9i-nIL" firstAttribute="top" secondItem="bfZ-xt-OrE" secondAttribute="bottom" constant="39" id="NtI-H5-cL6"/>
+                                    <constraint firstItem="rd9-AL-6UE" firstAttribute="width" secondItem="DW5-0s-gis" secondAttribute="width" multiplier="0.0966184" id="WXo-p4-O2O"/>
+                                    <constraint firstAttribute="trailing" secondItem="cxa-f9-pxd" secondAttribute="trailing" constant="8" id="YuQ-r5-2xe"/>
+                                    <constraint firstItem="bfZ-xt-OrE" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="top" id="dg1-f8-0Th"/>
+                                    <constraint firstItem="bfZ-xt-OrE" firstAttribute="leading" secondItem="DW5-0s-gis" secondAttribute="leading" constant="137" id="fzX-fq-Yc8"/>
+                                    <constraint firstItem="rd9-AL-6UE" firstAttribute="height" secondItem="DW5-0s-gis" secondAttribute="height" multiplier="0.206186" id="iGb-0j-JuD"/>
+                                    <constraint firstItem="rd9-AL-6UE" firstAttribute="leading" secondItem="DW5-0s-gis" secondAttribute="leading" constant="8" id="mXd-02-FiY"/>
+                                    <constraint firstItem="rd9-AL-6UE" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="top" constant="8" id="oh4-lP-nul"/>
+                                    <constraint firstItem="cxa-f9-pxd" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="top" constant="8" id="oyr-pD-usE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlb-5h-dUu" userLabel="BlackView">
+                                <rect key="frame" x="0.0" y="417" width="414" height="479"/>
+                                <color key="backgroundColor" red="0.1176470444" green="0.1176470444" blue="0.1176470444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2t-Ic-2He" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
                                 <rect key="frame" x="20" y="575" width="177" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-Bw-quV" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RMk-Bw-quV" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
                                 <rect key="frame" x="219" y="575" width="177" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wp5-5a-6DN" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wp5-5a-6DN" customClass="MenuBlock" customModule="Mono_Page" customModuleProvider="target">
                                 <rect key="frame" x="20" y="352" width="376" height="203"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjO-d8-hNy" customClass="ExchangeRates" customModule="Mono_Page" customModuleProvider="target">
-                                <rect key="frame" x="20" y="81" width="374" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zlb-5h-dUu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="417" id="0hl-SB-Eia"/>
+                            <constraint firstItem="V2t-Ic-2He" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3DK-u6-Bpb"/>
+                            <constraint firstItem="ZHk-WB-Y6W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BPz-io-uic"/>
+                            <constraint firstItem="DW5-0s-gis" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BmO-Ca-LJV"/>
+                            <constraint firstItem="Zlb-5h-dUu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EMg-ak-qlY"/>
+                            <constraint firstItem="V2t-Ic-2He" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="bottom" constant="158" id="GTY-Wz-Xsx"/>
+                            <constraint firstItem="Wp5-5a-6DN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GiH-cJ-feq"/>
+                            <constraint firstAttribute="bottom" secondItem="Wp5-5a-6DN" secondAttribute="bottom" constant="341" id="HAy-1V-fCa"/>
+                            <constraint firstItem="Zlb-5h-dUu" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="bottom" id="Ku2-i8-G5G"/>
+                            <constraint firstItem="Wp5-5a-6DN" firstAttribute="top" secondItem="ZHk-WB-Y6W" secondAttribute="bottom" constant="129" id="Mjb-pC-3H8"/>
+                            <constraint firstItem="DW5-0s-gis" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R9O-fX-A1M"/>
+                            <constraint firstItem="DW5-0s-gis" firstAttribute="top" secondItem="ZHk-WB-Y6W" secondAttribute="bottom" id="UKK-5R-Ent"/>
+                            <constraint firstItem="DW5-0s-gis" firstAttribute="top" secondItem="ZHk-WB-Y6W" secondAttribute="bottom" id="UsW-PR-U7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wp5-5a-6DN" secondAttribute="trailing" constant="18" id="WE1-hc-iSC"/>
+                            <constraint firstItem="Zlb-5h-dUu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XFP-bV-taR"/>
+                            <constraint firstAttribute="bottom" secondItem="Zlb-5h-dUu" secondAttribute="bottom" id="XNn-8n-2VS"/>
+                            <constraint firstItem="ZHk-WB-Y6W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZQa-OA-STN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RMk-Bw-quV" secondAttribute="trailing" constant="18" id="Zeb-YB-Ild"/>
+                            <constraint firstAttribute="bottom" secondItem="RMk-Bw-quV" secondAttribute="bottom" constant="121" id="ZoH-Ut-eR6"/>
+                            <constraint firstItem="Zlb-5h-dUu" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="bottom" id="dnQ-Wg-2w3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V2t-Ic-2He" secondAttribute="bottom" constant="87" id="eyt-hd-6KH"/>
+                            <constraint firstItem="DW5-0s-gis" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="223" id="kZA-mQ-41H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V2t-Ic-2He" secondAttribute="trailing" constant="217" id="m6v-Sa-oJM"/>
+                            <constraint firstItem="RMk-Bw-quV" firstAttribute="top" secondItem="DW5-0s-gis" secondAttribute="bottom" constant="158" id="w8Y-GZ-mq9"/>
+                            <constraint firstItem="ZHk-WB-Y6W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xPZ-r5-9GB"/>
+                            <constraint firstItem="RMk-Bw-quV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="219" id="zKF-Tm-4Wk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="archive" destination="RMk-Bw-quV" id="iY8-iY-dld"/>
                         <outlet property="buingInParts" destination="V2t-Ic-2He" id="kCu-25-6WZ"/>
                         <outlet property="exchangeRate" destination="FjO-d8-hNy" id="tnK-aO-lpX"/>
+                        <outlet property="flag" destination="Jq7-9i-nIL" id="BcC-rj-Qkd"/>
                         <outlet property="installmentCard" destination="Wp5-5a-6DN" id="Pt9-No-aaQ"/>
+                        <outlet property="leftIcon" destination="rd9-AL-6UE" id="o28-RQ-Mqn"/>
+                        <outlet property="rightIcon" destination="cxa-f9-pxd" id="gga-0L-aGr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

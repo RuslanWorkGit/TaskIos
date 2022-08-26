@@ -8,11 +8,18 @@
 import Foundation
 import UIKit
 
+protocol MenuBlockDelegate: NSObject {
+    func menuElementPressed()
+}
+
 class MenuBlock: UIView {
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mainImage: UIImageView?
     @IBOutlet weak var mainLabel: UILabel?
+    
+    weak var delegate: MenuBlockDelegate?
+    
     
     
     override init(frame: CGRect) {
@@ -30,6 +37,10 @@ class MenuBlock: UIView {
         Bundle.main.loadNibNamed("MenuBlock", owner: self, options: nil)
         mainView.layer.cornerRadius = 25
         mainView.fixInView(self)
+        
+        let oneTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(menuElementPressed))
+        
+        self.mainView.addGestureRecognizer(oneTap)
 
         
     }
@@ -38,6 +49,12 @@ class MenuBlock: UIView {
         self.mainImage?.image = image
         mainLabel?.text = text
     }
+    
+    
+    @objc func menuElementPressed() {
+        delegate?.menuElementPressed()
+    }
+    
 }
 
 extension UIView

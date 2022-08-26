@@ -7,7 +7,11 @@
 
 import UIKit
 
-class MenuBlockControllerViewController: UIViewController {
+class MenuBlockControllerViewController: UIViewController, MenuBlockDelegate {
+    func menuElementPressed() {
+        print("Menu Item Pressed!")
+    }
+    
     
     @IBOutlet weak var archive: MenuBlock!
     @IBOutlet weak var buingInParts: MenuBlock!
@@ -30,6 +34,10 @@ class MenuBlockControllerViewController: UIViewController {
         rightIcon.image = UIImage(named: "coat-of-arms")
         flag.image = UIImage(named: "ukraineFlag")
        
+        archive.delegate = self
+        buingInParts.delegate = self
+        installmentCard.delegate = self
+        
     }
 
 }

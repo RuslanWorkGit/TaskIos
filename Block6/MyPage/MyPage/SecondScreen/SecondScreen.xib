@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondScreen" customModule="MyPage" customModuleProvider="target">
+            <connections>
+                <outlet property="date" destination="SH8-Pd-Pzs" id="KFE-05-Y8u"/>
+                <outlet property="mainIamge" destination="YHu-Ut-DDo" id="cFE-K1-Ikl"/>
+                <outlet property="mainLAble" destination="hEj-Xx-WGK" id="e9C-mo-BWe"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="W51-bc-NVs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="296"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YHu-Ut-DDo">
+                    <rect key="frame" x="0.0" y="0.0" width="548" height="296"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH8-Pd-Pzs">
+                    <rect key="frame" x="39" y="255" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-Xx-WGK">
+                    <rect key="frame" x="39" y="193" width="483" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="hEj-Xx-WGK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="39" id="4nX-8G-4HV"/>
+                <constraint firstAttribute="bottom" secondItem="YHu-Ut-DDo" secondAttribute="bottom" id="8nM-UP-Jqe"/>
+                <constraint firstItem="hEj-Xx-WGK" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.881387" id="E0m-22-SWV"/>
+                <constraint firstItem="YHu-Ut-DDo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IV0-CD-pFS"/>
+                <constraint firstAttribute="bottom" secondItem="SH8-Pd-Pzs" secondAttribute="bottom" constant="20" id="Nzy-Q5-UMp"/>
+                <constraint firstItem="YHu-Ut-DDo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Onh-sX-Oeg"/>
+                <constraint firstItem="YHu-Ut-DDo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QI5-2P-Vkk"/>
+                <constraint firstItem="SH8-Pd-Pzs" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.330292" id="mUE-rm-6wJ"/>
+                <constraint firstItem="SH8-Pd-Pzs" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.0963303" id="mpi-NS-h9d"/>
+                <constraint firstItem="YHu-Ut-DDo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="oP4-q5-IOm"/>
+                <constraint firstAttribute="trailing" secondItem="YHu-Ut-DDo" secondAttribute="trailing" id="pNu-ws-50i"/>
+                <constraint firstItem="hEj-Xx-WGK" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.192661" id="s4z-ql-hRz"/>
+                <constraint firstItem="SH8-Pd-Pzs" firstAttribute="top" secondItem="hEj-Xx-WGK" secondAttribute="bottom" constant="20" id="tAE-OY-d3X"/>
+                <constraint firstItem="hEj-Xx-WGK" firstAttribute="leading" secondItem="SH8-Pd-Pzs" secondAttribute="leading" id="u8g-1q-WVH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="292.75362318840581" y="-117.1875"/>
+        </view>
+    </objects>
+</document>

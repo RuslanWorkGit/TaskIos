@@ -9,17 +9,18 @@ import Foundation
 import UIKit
 
 protocol MenuBlockDelegate: NSObject {
-    func menuElementPressed()
+    func menuElementPressed(item: MenuBlock)
 }
+
+
 
 class MenuBlock: UIView {
     
     @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var mainImage: UIImageView?
-    @IBOutlet weak var mainLabel: UILabel?
+    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var mainLabel: UILabel!
     
     weak var delegate: MenuBlockDelegate?
-    
     
     
     override init(frame: CGRect) {
@@ -46,13 +47,12 @@ class MenuBlock: UIView {
     }
     
     func configure(with text: String = "error", image: UIImage) {
-        self.mainImage?.image = image
-        mainLabel?.text = text
+        self.mainImage!.image = image
+        mainLabel!.text = text
     }
     
-    
     @objc func menuElementPressed() {
-        delegate?.menuElementPressed()
+        delegate?.menuElementPressed(item: self)
     }
     
 }

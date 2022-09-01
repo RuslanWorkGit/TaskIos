@@ -8,9 +8,14 @@
 import UIKit
 
 class MenuBlockControllerViewController: UIViewController, MenuBlockDelegate {
-    func menuElementPressed() {
-        print("Menu Item Pressed!")
+    func menuElementPressed(item: MenuBlock) {
+        guard let new = item.mainLabel?.text else{
+            return
+        }
+        print("\(new) is pressed")
+       
     }
+    
     
     
     @IBOutlet weak var archive: MenuBlock!
@@ -27,7 +32,7 @@ class MenuBlockControllerViewController: UIViewController, MenuBlockDelegate {
         exchangeRate.config(firstCurrency: .USA, secondCurrency: .Poland)
         
         archive.configure(with: "Archive", image: UIImage(named: "archive")!)
-        buingInParts.configure(with: "Buing in \n Parts", image: UIImage(named: "puzzle")!)
+        buingInParts.configure(with: "Buing in Parts", image: UIImage(named: "puzzle")!)
         installmentCard.configure(with: "Installment card", image: UIImage(named: "calendar")!)
         
         leftIcon.image = UIImage(named: "ukraine")

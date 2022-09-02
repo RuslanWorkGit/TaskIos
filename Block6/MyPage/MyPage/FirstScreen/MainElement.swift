@@ -38,6 +38,8 @@ class MainElement: UIView {
         Bundle.main.loadNibNamed("MainElement", owner: self, options: nil)
         mainView.fixInView(self)
         
+        self.mainPhoto.layer.cornerRadius = self.mainPhoto.frame.size.width / 2
+        
         mainView.layer.cornerRadius = 15
         leftView.layer.cornerRadius = 15
         rightView.layer.cornerRadius = 15

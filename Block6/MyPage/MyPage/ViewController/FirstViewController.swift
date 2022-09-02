@@ -31,7 +31,7 @@ class FirstViewController: UIViewController {
         
         userPhoto.image = UIImage(named: "User")
     
-        FirstPersonalInfo.config(image: UIImage(named: "Mari")!, mainLable: "Any Nomand's wwant to live in Austin; April, May or June?", name: "Anu Priya", date: "Sep 25", commentCount: "347", like: "21")
+        FirstPersonalInfo.config(image: UIImage(named: "fourthImg")!, mainLable: "Any Nomand's wwant to live in Austin; April, May or June?", name: "Anu Priya", date: "Sep 25", commentCount: "347", like: "21")
         SecondPersonalInfo.config(image: UIImage(named: "Martin")!, mainLable: "Where do you spend winter?", name: "Ricky charles", date: "Sep 23", commentCount: "196", like: "268")
         thirdPersonalInfo.config(image: UIImage(named: "Alis")!, mainLable: "How do you avoid settling in one place?", name: "Alis Kumar", date: "Sep 20", commentCount: "62", like: "21")
         fourthPersonalInfo.config(image: UIImage(named: "John")!, mainLable: "Best way to find a basic room/flat in Chennai?", name: "John Saxena", date: "Sep 9", commentCount: "9", like: "543")

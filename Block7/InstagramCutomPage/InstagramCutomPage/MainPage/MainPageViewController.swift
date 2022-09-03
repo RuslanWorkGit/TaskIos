@@ -9,6 +9,8 @@ import UIKit
 
 class MainPageViewController: UIViewController {
 
+
+
     @IBOutlet weak var tableView: UITableView!
     var arrayOfData: [Post] = [firstExamp, secondExamp, thirdExamp]
     override func viewDidLoad() {
@@ -35,14 +37,32 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainCellTableViewCell") as? MainCellTableViewCell else {
             return UITableViewCell()
         }
+        
         cell.configure(with: arrayOfData[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         600
     }
+      
+}
+
+extension MainPageViewController: MainCellTableViewCellDelegate{
+    func removeLikePost(item: MainCellTableViewCell) {
+        guard let value = item.countlikes.text else {
+            return
+        }
+        
+        item.countlikes.text = String(Int(value)! - 1)
+    }
     
-    
-    
+    func didLikeTapped(item: MainCellTableViewCell) {
+        guard let value = item.countlikes.text else {
+            return
+        }
+        
+        item.countlikes.text = String(Int(value)! + 1)
+    }
 }

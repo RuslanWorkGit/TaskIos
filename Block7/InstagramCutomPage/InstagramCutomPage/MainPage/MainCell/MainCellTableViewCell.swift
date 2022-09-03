@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol MainCellTableViewCellDelegate: AnyObject {
+    func didLikeTapped(item: MainCellTableViewCell)
+    func removeLikePost(item: MainCellTableViewCell)
+}
+
 class MainCellTableViewCell: UITableViewCell {
+
 
     @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var friendNickName: UILabel!
@@ -20,31 +26,50 @@ class MainCellTableViewCell: UITableViewCell {
     @IBOutlet weak var sendImage: UIImageView!
     @IBOutlet weak var saveImage: UIImageView!
     
-    @IBOutlet weak var countViews: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var countlikes: UILabel!
     @IBOutlet weak var mainText: UILabel!
     @IBOutlet weak var commentCount: UILabel!
     @IBOutlet weak var pushTime: UILabel!
+    
+    weak var delegate: MainCellTableViewCellDelegate?
     
     func configure(with post: Post) {
         friendImage.image = UIImage(named: post.avatarImageName)
         friendImage.layer.cornerRadius = self.friendImage.frame.size.width / 2
         friendNickName.text = post.userName
         contentImage.image = UIImage(named: post.postImageName)
-        countViews.text = String(post.viewsCount) + " Likes"
+        countlikes.text = String(post.likesCount)
         mainText.text = post.description
         commentCount.text = String(post.countOfComments) + "comments"
         pushTime.text = post.postedAt
+        
+        addButtonAction()
     }
     
-    @IBAction func likePost(_ sender: Any) {
+    private func addButtonAction() {
+        likeButton.addTarget(self, action: #selector(likePost), for: .touchUpInside)
+
+    }
+    
+    @objc private func likePost() {
         UIImageView.animate(withDuration: 0.5, delay: 0) {
             self.likeImage.image = UIImage(systemName: "heart.fill")
             self.likeImage.tintColor = .red
-           
-            self.countViews.text = String(firstExamp.viewsCount + 1) + " Likes"
+            
+            if self.likeButton.tag == 0 {
+                self.delegate?.didLikeTapped(item: self)
+                self.likeButton.tag = 1
+            } else {
+                self.likeImage.image = UIImage(systemName: "suit.heart")
+                self.likeImage.tintColor = .black
+                self.delegate?.removeLikePost(item: self)
+                self.likeButton.tag = 0
+            }
+            
         }
-
     }
+
     
     @IBAction func savePost(_ sender: Any) {
         UIImageView.animate(withDuration: 0.5, delay: 0) {
@@ -52,6 +77,4 @@ class MainCellTableViewCell: UITableViewCell {
         }
 
     }
-    
-    
 }

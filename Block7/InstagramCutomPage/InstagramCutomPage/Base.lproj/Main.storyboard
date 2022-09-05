@@ -11,7 +11,6 @@
         <!--Item-->
         <scene sceneID="Fbd-b6-wrP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-hw-GED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="ZaG-aL-Xdw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="kHC-4O-bsi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5yi-En-zH0">
@@ -22,6 +21,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="46K-0G-9O1"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7Q-hw-GED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="26.086956521739133" y="69.642857142857139"/>
         </scene>
@@ -66,6 +66,31 @@
             </objects>
             <point key="canvasLocation" x="937.68115942028987" y="69.642857142857139"/>
         </scene>
+        <!--Send Page View Controller-->
+        <scene sceneID="60h-TB-aZv">
+            <objects>
+                <viewController storyboardIdentifier="SendPageViewController" id="0TW-vi-zD5" customClass="SendPageViewController" customModule="InstagramCutomPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abw-Cy-qS9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-vc-MgY">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UDw-xB-LCL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="lIZ-vc-MgY" id="5uJ-PA-GO8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqg-uX-Iid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="68"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="7mE-pG-d9j">
             <objects>
@@ -88,6 +113,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DeG-xl-F73" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U46-Rm-AAf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -123,6 +149,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

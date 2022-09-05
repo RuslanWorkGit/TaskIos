@@ -23,6 +23,8 @@ class MainPageViewController: UIViewController {
         self.tableView.register(nib, forCellReuseIdentifier: "MainCellTableViewCell")
         
     }
+    
+    
 
 }
 
@@ -40,12 +42,22 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configure(with: arrayOfData[indexPath.row])
         cell.delegate = self
+        
+        cell.sendPost.addTarget(self, action: #selector(sendPostPage), for: .touchUpInside)
+        
         return cell
+    }
+    
+    @objc func sendPostPage() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newBoard = storyboard.instantiateViewController(withIdentifier: "SendPageViewController") as! SendPageViewController
+        navigationController?.pushViewController(newBoard, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         600
     }
+    
       
 }
 

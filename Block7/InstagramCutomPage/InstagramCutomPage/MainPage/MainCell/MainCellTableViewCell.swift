@@ -26,6 +26,7 @@ class MainCellTableViewCell: UITableViewCell {
     @IBOutlet weak var sendImage: UIImageView!
     @IBOutlet weak var saveImage: UIImageView!
     
+    @IBOutlet weak var sendPost: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var countlikes: UILabel!
     @IBOutlet weak var mainText: UILabel!

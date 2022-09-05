@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44BD088B28C3E9DF000DE6B2 /* SendPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD088A28C3E9DF000DE6B2 /* SendPageViewController.swift */; };
 		44EBCDF728C1F252005C99B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBCDF628C1F252005C99B1 /* AppDelegate.swift */; };
 		44EBCDF928C1F252005C99B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EBCDF828C1F252005C99B1 /* SceneDelegate.swift */; };
 		44EBCDFE28C1F252005C99B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EBCDFC28C1F252005C99B1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44BD088A28C3E9DF000DE6B2 /* SendPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPageViewController.swift; sourceTree = "<group>"; };
 		44EBCDF328C1F252005C99B1 /* InstagramCutomPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCutomPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44EBCDF628C1F252005C99B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44EBCDF828C1F252005C99B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44BD088928C3E9C6000DE6B2 /* sendPage */ = {
+			isa = PBXGroup;
+			children = (
+				44BD088A28C3E9DF000DE6B2 /* SendPageViewController.swift */,
+			);
+			path = sendPage;
+			sourceTree = "<group>";
+		};
 		44EBCDEA28C1F252005C99B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		44EBCE0E28C212AE005C99B1 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				44BD088928C3E9C6000DE6B2 /* sendPage */,
 				44EBCE1128C2138E005C99B1 /* MainCell */,
 				44EBCE0F28C212C5005C99B1 /* MainPageViewController.swift */,
 			);
@@ -175,6 +186,7 @@
 				44EBCE1428C213BB005C99B1 /* MainCellTableViewCell.swift in Sources */,
 				44EBCE1028C212C5005C99B1 /* MainPageViewController.swift in Sources */,
 				44EBCDF728C1F252005C99B1 /* AppDelegate.swift in Sources */,
+				44BD088B28C3E9DF000DE6B2 /* SendPageViewController.swift in Sources */,
 				44EBCE0D28C2117D005C99B1 /* PostStruct.swift in Sources */,
 				44EBCDF928C1F252005C99B1 /* SceneDelegate.swift in Sources */,
 			);

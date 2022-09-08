@@ -1,0 +1,8 @@
+
+
+target 'JSON parsing' do
+
+
+	pod 'Alamofire'
+
+end

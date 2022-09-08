@@ -1,0 +1,100 @@
+
+{
+    "count": 3,
+    "companyDescription": "Mobile creator",
+    "listOfData": [
+        {
+            "name": "iPhone 13",
+            "modelNumber": "NJ76354KL",
+            "countries": [
+                "Ukraine",
+                "Poland",
+                "USA",
+                "Canada"
+            ],
+            "price": {
+                "regions": [
+                    {
+                      "name": "Ukraine",
+                      "price": 800
+                    },
+                    {
+                        "name": "Poland",
+                        "price": 780
+                    },
+                    {
+                        "name": "USA",
+                        "price": 750
+                    },
+                    {
+                        "name": "Canada",
+                        "price": 750
+                    }
+               ],
+            },
+            "year": 2021
+        },
+        {
+            "name": "iPhone 12",
+            "modelNumber": "NJ76377454KL",
+            "countries": [
+                "Ukraine",
+                "Poland",
+                "USA",
+                "Canada"
+            ],
+            "price": {
+                "regions": [
+                    {
+                      "name": "Ukraine",
+                      "price": 650
+                    },
+                    {
+                        "name": "Poland",
+                        "price": 600
+                    },
+                    {
+                        "name": "USA",
+                        "price": 550
+                    },
+                    {
+                        "name": "Canada",
+                        "price": 570
+                    }
+               ],
+            },
+            "year": 2020
+        },
+        {
+            "name": "iPhone 14",
+            "modelNumber": "NJ7635JSOB4KL",
+            "countries": [
+                "Ukraine",
+                "Poland",
+                "USA",
+                "Canada"
+            ],
+            "price": {
+                "regions": [
+                    {
+                      "name": "Ukraine",
+                      "price": 1200
+                    },
+                    {
+                        "name": "Poland",
+                        "price": 1100
+                    },
+                    {
+                        "name": "USA",
+                        "price": 1000
+                    },
+                    {
+                        "name": "Canada",
+                        "price": 1050
+                    }
+               ],
+            },
+            "year": 2022
+        }
+    ]
+}
